@@ -1,5 +1,16 @@
-### Temel Model Raporu  
+### Projenin Amacı
+Bu projede GarantiBBVA 'nın çalışanlarına ilişkin veriler kullanılarak. İlgili çalışanların 2019 'da işten ayrılıp ayrılmayacağının tahminini yapmak amaçlanmıştır. 
 
+### Süreç İle İlgili Görüşlerim
+Proje süresince en çok vaktimi alan kısım ön işleme kısmı oldu. Zira verilerin hepsi birbirine girmiş durumdayı. Ön işleme kısmında ise beni en çok uğraştıran ayırca modelimin doğruluğunu düşürdüğünü düşündüğüm bir diğer durum ise kategorik sütunların yüzlerce kategorilerden oluşup iyi derecede bir ön işleme gerektirmesiydi.  
+
+bkz: `istanbul, ıstanbul, İSTANBUL, ISTANBUL, İST ANBUL, kadıköy, KADIKOY, Marmara İst. , stnbul, uskudar/ist, etc...`
+
+Ön işleme kısmını bitirdikten sonra veri analizi yapıp makine öğrenmesi ve derin öğrenme yöntemleri ile incelemeye devam ettim.  
+
+Modelleri ile ilgili raporları ise aşağıda belirttim.
+
+### Temel Model Raporu  
 Sınıflandırma süresince kullanılan modeller aşağıdaki gibidir:  
 * Lojistik Regreson  
 * Random Forest Classifier
@@ -22,7 +33,7 @@ Kullanılan tüm bu sınıflandırma modellerinin yanında yapay sinir ağları 
 
 Yukarıdaki tabloda elde edilen sonuçlar modellerin default parametreleri ve hedef değişkenindeki sınıf ağırlıklarının belirtilmesi kullanılarak elde edilmiş sonuçlardır.
 
-Derin sinir ağları kısmında ise pek çok çeşitli mimari deemeleri yapıldı.
+Derin sinir ağları kısmında ise pek çok çeşitli mimari denemeleri yapıldı.
 
 <hr>
 
@@ -57,3 +68,5 @@ Bu seçilen modeller hyperparameter tuning işlemine tabi tutuldu, ve sonrasınd
 | Random Forest  | AdaBoost | 0.864127 |
 | MLPClassifier & Random Forest  | VotingClassifier | 0.82897 |
 | Random Forest & XGBoost  | Stacked | 0.853866 |
+
+Sonuç olarak AdaBoost ile boost edilmiş rassal ormanlar algoritmasını kullandım.
