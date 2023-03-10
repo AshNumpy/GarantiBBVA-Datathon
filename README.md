@@ -4,7 +4,7 @@ Bu projede GarantiBBVA 'nın çalışanlarına ilişkin veriler kullanılarak. �
 ### Süreç İle İlgili Görüşlerim
 Proje süresince en çok vaktimi alan kısım ön işleme kısmı oldu. Zira verilerin hepsi birbirine girmiş durumdayı. Ön işleme kısmında ise beni en çok uğraştıran ayırca modelimin doğruluğunu düşürdüğünü düşündüğüm bir diğer durum ise kategorik sütunların yüzlerce kategorilerden oluşup iyi derecede bir ön işleme gerektirmesiydi.  
 
-bkz: `istanbul, ıstanbul, İSTANBUL, ISTANBUL, İST ANBUL, kadıköy, KADIKOY, Marmara İst. , stnbul, uskudar/ist, etc...`
+Sadece `istanbul` lokasyonu için bkz: `istanbul, ıstanbul, İSTANBUL, ISTANBUL, İST ANBUL, kadıköy, KADIKOY, Marmara İst. , stnbul, uskudar/ist, etc...`
 
 Ön işleme kısmını bitirdikten sonra veri analizi yapıp makine öğrenmesi ve derin öğrenme yöntemleri ile incelemeye devam ettim.  
 
